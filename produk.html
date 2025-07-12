@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk PowerFlow Exhaust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-black text-white py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-fire text-yellow-500 text-2xl"></i>
+                <span class="text-xl font-bold">PowerFlow</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="produk.html" class="nav-link text-yellow-500">Produk</a>
+                <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black py-2 px-4 absolute w-full left-0">
+            <a href="index.html" class="block py-2">Beranda</a>
+            <a href="produk.html" class="block py-2 text-yellow-500">Produk</a>
+            <a href="tentang-kami.html" class="block py-2">Tentang Kami</a>
+            <a href="kontak.html" class="block py-2">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Product Filter -->
+    <div class="bg-white py-8 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                <h1 class="text-3xl font-bold">Produk PowerFlow</h1>
+                <div class="mt-4 md:mt-0">
+                    <span class="text-gray-600 mr-2">Filter:</span>
+                    <select class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        <option>Semua Kategori</option>
+                        <option>Racing Series</option>
+                        <option>Carbon Edition</option>
+                        <option>Titanium Pro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3f9a8ff1-c1e0-45f9-8b8c-95452a93ccb2.png" alt="Knalpot racing stainless steel dengan desain melengkung modern untuk motor sport" class="w-full h-48 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-yellow-500 text-black px-2 py-1 text-sm font-bold">BEST SELLER</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">PowerFlow Racing Series</h3>
+                        <p class="text-yellow-500 font-bold mb-2">Rp 1.850.000</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-500 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(128)</span>
+                        </div>
+                        <a href="detail-produk.html" class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="knalpot1.jpg" alt="Knalpot carbon fiber dengan finish glossy hitam untuk motor naked bike" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">PowerFlow Carbon Edition</h3>
+                        <p class="text-yellow-500 font-bold mb-2">Rp 2.250.000</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-500 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(89)</span>
+                        </div>
+                        <a href="detail-produk.html" class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f5ce56f8-610f-4066-81e5-0dce89f6d7ca.png" alt="Knalpot titanium dengan warna biru titanium untuk motor adventure" class="w-full h-48 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-red-500 text-white px-2 py-1 text-sm font-bold">BARU!</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">PowerFlow Titanium Pro</h3>
+                        <p class="text-yellow-500 font-bold mb-2">Rp 3.150.000</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-500 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(42)</span>
+                        </div>
+                        <a href="detail-produk.html" class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/01c1ac3d-8d04-47bb-921a-bd87de6d7e06.png" alt="Knalpot stainless steel untuk motor matic dengan desain minimalis" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">PowerFlow Matic Series</h3>
+                        <p class="text-yellow-500 font-bold mb-2">Rp 1.450.000</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-500 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(76)</span>
+                        </div>
+                        <a href="detail-produk.html" class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 5 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b1a6228a-690e-4c9c-93c2-be622cb14f91.png" alt="Knalpot baja hitam untuk motor bebek dengan suara khas" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">PowerFlow Bebek Series</h3>
+                        <p class="text-yellow-500 font-bold mb-2">Rp 950.000</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-500 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(134)</span>
+                        </div>
+                        <a href="detail-produk.html" class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 6 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f06ce611-c77d-4f54-b4ca-daf01543f8f1.png" alt="Knalpot dual outlet untuk motor klasik dengan finishing chrome" class="w-full h-48 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-yellow-500 text-black px-2 py-1 text-sm font-bold">POPULAR</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">PowerFlow Classic Series</h3>
+                        <p class="text-yellow-500 font-bold mb-2">Rp 1.250.000</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-500 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(67)</span>
+                        </div>
+                        <a href="detail-produk.html" class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 7 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b0472436-7ec7-422b-9ff0-26dae74d867a.png" alt="Knalpot carbon fiber edition untuk motor sport dengan logo laser" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">PowerFlow Carbon Premium</h3>
+                        <p class="text-yellow-500 font-bold mb-2">Rp 2.750.000</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-500 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(53)</span>
+                        </div>
+                        <a href="detail-produk.html" class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 8 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/83f58d01-9acf-4c8d-86d2-5c8dc9dfa5c6.png" alt="Knalpot racing full system untuk motor drag dengan pembuangan atas" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">PowerFlow Drag Series</h3>
+                        <p class="text-yellow-500 font-bold mb-2">Rp 3.500.000</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-500 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(28)</span>
+                        </div>
+                        <a href="detail-produk.html" class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="flex justify-center mt-8">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-3 py-1 border border-gray-300 rounded text-gray-600 hover:bg-gray-100">&laquo;</a>
+                    <a href="#" class="px-3 py-1 border border-gray-300 rounded bg-yellow-500 text-white">1</a>
+                    <a href="#" class="px-3 py-1 border border-gray-300 rounded text-gray-600 hover:bg-gray-100">2</a>
+                    <a href="#" class="px-3 py-1 border border-gray-300 rounded text-gray-600 hover:bg-gray-100">3</a>
+                    <a href="#" class="px-3 py-1 border border-gray-300 rounded text-gray-600 hover:bg-gray-100">&raquo;</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-fire text-yellow-500 text-2xl"></i>
+                        <span class="text-xl font-bold">PowerFlow</span>
+                    </div>
+                    <p class="text-gray-400">Spesialis knalpot performa tinggi untuk berbagai tipe motor.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Navigasi</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Beranda

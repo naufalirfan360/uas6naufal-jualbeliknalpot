@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - PowerFlow Exhaust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b277f95b-df9f-46ec-af44-3cdd1990e81f.png') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-black text-white py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-fire text-yellow-500 text-2xl"></i>
+                <span class="text-xl font-bold">PowerFlow</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="produk.html" class="nav-link">Produk</a>
+                <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black py-2 px-4 absolute w-full left-0">
+            <a href="index.html" class="block py-2">Beranda</a>
+            <a href="produk.html" class="block py-2">Produk</a>
+            <a href="tentang-kami.html" class="block py-2">Tentang Kami</a>
+            <a href="kontak.html" class="block py-2">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Hubungi Kami</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Kami siap membantu Anda. Hubungi tim kami untuk pertanyaan produk, konsultasi, atau dukungan teknis.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Kirim Pesan</h2>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-medium">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 font-medium">Nomor HP</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-medium">Pesan</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded transition duration-300">Kirim Pesan</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Informasi Kontak</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 text-2xl mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Alamat</h3>
+                                <p class="text-gray-600">Jl. Raya Knalpot No. 123, Jakarta Selatan 12540</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 text-2xl mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Telepon</h3>
+                                <p class="text-gray-600">+62 812 3456 7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 text-2xl mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Email</h3>
+                                <p class="text-gray-600">info@powerflow-exhaust.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 text-2xl mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Jam Operasional</h3>
+                                <p class="text-gray-600">Senin-Jumat: 09:00 - 18:00 WIB</p>
+                                <p class="text-gray-600">Sabtu: 09:00 - 15:00 WIB</p>
+                            </div
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b277f95b-df9f-46ec-af44-3cdd1990e81f.png" alt="Tim PowerFlow di bengkel produksi" class="w-full rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Sejarah Kami</h2>
+                    <p class="text-gray-600 mb-4">
+                        Berdiri sejak 2012, PowerFlow dimulai dari bengkel kecil di Jakarta yang fokus pada modifikasi knalpot racing. Dengan dedikasi tinggi terhadap kualitas dan inovasi, kami berkembang menjadi salah satu produsen knalpot terkemuka di Indonesia.
+                    </p>
+                    <p class="text-gray-600">
+                        Kini kami memiliki pusat produksi seluas 2000m² dengan 50+ karyawan berpengalaman yang terus berinovasi menghasilkan produk berkualitas untuk pecinta motor tanah air.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nilai Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Kualitas Terbaik</h3>
+                    <p class="text-gray-600">Hanya menggunakan material premium dan proses produksi terkontrol ketat</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Inovasi Tanpa Henti</h3>
+                    <p class="text-gray-600">Terus berinovasi menghadirkan produk dengan performa terdepan</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Kepuasan Pelanggan</h3>
+                    <p class="text-gray-600">Prioritas utama kami adalah kepuasan dan kepercayaan pelanggan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Product Images -->
+                <div class="md:w-1/2">
+                    <div class="mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8dd1dbc-aa3e-4f9f-8586-e5cbfbba504e.png" alt="Knalpot PowerFlow Racing Series dari berbagai angle" class="w-full rounded-lg shadow-lg border">
+                    </div>
+                    <div class="grid grid-cols-4 gap-2">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8dd1dbc-aa3e-4f9f-8586-e5cbfbba504e.png" alt="Tampilan depan knalpot PowerFlow Racing Series" class="cursor-pointer border rounded hover:border-yellow-400">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8dd1dbc-aa3e-4f9f-8586-e5cbfbba504e.png" alt="Tampilan samping knalpot PowerFlow Racing Series" class="cursor-pointer border rounded hover:border-yellow-400">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8dd1dbc-aa3e-4f9f-8586-e5cbfbba504e.png" alt="Detail sambungan knalpot PowerFlow Racing Series" class="cursor-pointer border rounded hover:border-yellow-400">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8dd1dbc-aa3e-4f9f-8586-e5cbfbba504e.png" alt="Logo dan branding PowerFlow pada knalpot" class="cursor-pointer border rounded hover:border-yellow-400">
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="md:w-1/2">
+                    <div class="flex justify-between items-start mb-4">
+                        <h1 class="text-3xl font-bold">PowerFlow Racing Series</h1>
+                        <span class="bg-yellow-500 text-black px-3 py-1 font-bold rounded">BEST SELLER</span>
+                    </div>
+                    
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-600">128 ulasan</span>
+                    </div>
+                    
+                    <p class="text-2xl font-bold text-yellow-500 mb-6">Rp 1.850.000</p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-bold mb-2">Deskripsi Produk:</h3>
+                        <p class="text-gray-600">
+                            PowerFlow Racing Series adalah knalpot premium berbahan stainless steel dengan desain aerodinamis yang meningkatkan aliran udara hingga 35%. Knalpot ini dirancang khusus untuk motor sport dengan diameter inlet yang lebih besar untuk meningkatkan performa mesin.
+                        </p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-bold mb-2">Spesifikasi:</h3>
+                        <ul class="list-disc pl-6 text-gray-600">
+                            <li>Material: Stainless Steel 304</li>
+                            <li>Diameter Inlet: 50mm</li>
+                            <li>Panjang: 70cm</li>
+                            <li>Berat: 1.8kg</li>
+                            <li>Garansi: 2 Tahun</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex space-x-4 mb-8">
+                        <div class="flex items-center">
+                            <button class="bg-gray-200 px-3 py-1 rounded-l">-</button>
+                            <input type="number" value="1" min="1" class="w-12 text-center border-t border-b border-gray-200 py-1">
+                            <button class="bg-gray-200 px-3 py-1 rounded-r">+</button>
+                        </div>
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-2 rounded transition duration-300">
+                            <i class="fas fa-shopping-cart mr-2"></i>Tambahkan ke Keranjang
+                        </button>
+                    </div>
+                    
+                    <button class="w-full bg-black hover:bg-gray-800 text-white font-bold py-3 px-6 rounded transition duration-300">
+                        Beli Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Keunggulan PowerFlow Racing Series</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Peningkatan Performa 35%</h3>
+                    <p class="text-gray-600">Desain aerodinamis meningkatkan aliran udara hingga 35% dibanding knalpot standar.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Suara Dalam & Keras</h3>
+                    <p class="text-gray-600">Menghasilkan suara bass yang dalam dengan getaran minimal.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Tahan Lama</h3>
+                    <p class="text-gray-600">Material stainless steel 304 tahan karat dan panas tinggi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Panduan Instalasi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kompatibilitas:</h3>
+                    <p class="text-gray-600 mb-6">Produk ini kompatibel dengan berbagai motor sport 150cc-250cc:</p>
+                    <ul class="list-disc pl-6 text-gray-600 mb-6">
+                        <li>Yamaha R15/R25</li>
+                        <li>Honda CBR150R/CBR250RR</li>
+                        <li>Kawasaki Ninja 250</li>
+                        <li>Suzuki GSX-R150</li>
+                    </ul>
+                    <p class="text-gray-600">
+                        *Jika motor Anda tidak termasuk dalam list di atas, silakan hubungi customer service kami untuk konfirmasi kompatibilitas.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Video Instalasi:</h3>
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8dd1dbc-aa3e-4f9f-8586-e5cbfbba504e.png" alt="Preview video instalasi PowerFlow Racing Series" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 mt-4">Lihat panduan lengkap instalasi knalpot PowerFlow Racing Series.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Produk Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Produk 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8dd1dbc-aa3e-4f9f-8586-e5cbfbba504e.png" alt="Knalpot racing stainless steel dengan desain melengkung modern untuk motor sport" class="w-full h-64 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-yellow-500 text-black px-3 py-1 font-bold">BEST SELLER</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">PowerFlow Racing Series</h3>
+                        <p class="text-gray-600 mb-4">Knalpot racing stainless steel dengan desain aerodinamis untuk performa maksimal.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-yellow-500">Rp 1.850.000</span>
+                            <a href="detail-produk.html" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2231e4c4-8faf-4885-aac8-cf3f87548e7e.png" alt="Knalpot carbon fiber dengan finish glossy hitam untuk motor naked bike" class="w-full h-64 object-cover"/>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">PowerFlow Carbon Edition</h3>
+                        <p class="text-gray-600 mb-4">Knalpot ringan berbahan carbon fiber dengan suara bass yang dalam.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-yellow-500">Rp 2.250.000</span>
+                            <a href="detail-produk.html" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bad89899-d69b-4235-9ad5-b3ef4dbc3669.png" alt="Knalpot titanium dengan warna biru titanium untuk motor adventure" class="w-full h-64 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 font-bold">BARU!</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">PowerFlow Titanium Pro</h3>
+                        <p class="text-gray-600 mb-4">Knalpot titanium tahan panas dengan konstruksi kokoh dan ringan.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-yellow-500">Rp 3.150.000</span>
+                            <a href="detail-produk.html" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="produk.html" class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition duration-300 font-medium">Lihat Semua Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Kenapa Memilih PowerFlow?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Peningkatan Performa</h3>
+                    <p class="text-gray-600">Desain aerodinamis kami meningkatkan aliran udara hingga 35% untuk tenaga lebih besar.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Material Ringan</h3>
+                    <p class="text-gray-600">Menggunakan material premium yang lebih ringan dari knalpot standar.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Garansi 2 Tahun</h3>
+                    <p class="text-gray-600">Garansi resmi 2 tahun untuk semua produk PowerFlow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-fire text-yellow-500 text-2xl"></i>
+                        <span class="text-xl font-bold">PowerFlow</span>
+                    </div>
+                    <p class="text-gray-400">Spesialis knalpot performa tinggi untuk berbagai tipe motor.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Navigasi</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Beranda</a></li>
+                        <li><a href="produk.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Produk</a></li>
+                        <li><a href="tentang-kami.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Tentang Kami</a></li>
+                        <li><a href="kontak.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mr-2"></i>
+                            <span class="text-gray-400">Jl. Raya Knalpot No. 123, Jakarta</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-yellow-500 mr-2"></i>
+                            <span class="text-gray-400">+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-yellow-500 mr-2"></i>
+                            <span class="text-gray-400">info@powerflow-exhaust.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Social Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 text-xl transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 text-xl transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 text-xl transition duration-300"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 text-xl transition duration-300"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 PowerFlow Exhaust. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
